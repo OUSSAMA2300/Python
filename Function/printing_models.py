@@ -17,7 +17,8 @@
 # for completed_model in completed_models:
 #     print(completed_model)
 
-# Doing them as functions that can modifys lists
+
+# Doing them as functions that can modify lists
 def print_models(unprinted_designs, completed_models):
     """
     Simulate printing each desgin, until none are left.
@@ -41,5 +42,12 @@ def show_completed(completed_models):
 unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
-print_models(unprinted_designs, completed_models)
-show_completed(completed_models)
+# print_models(unprinted_designs, completed_models)
+# show_completed(completed_models)
+
+# Using import
+
+import printing_functions
+
+printing_functions.print_models(unprinted_designs, completed_models)
+printing_functions.show_completed(completed_models)
