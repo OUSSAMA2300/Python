@@ -15,9 +15,9 @@ print(user_profile)
 
 # 8-13
 
-user_profile = build_profile('oussama', 'mohamed',
-                             location='mallawi',
-                             field='AI',
-                             birthdate='8/8/2003')
+user_profile = build_profile('alaa', 'waleed',
+                             location='alex',
+                             field='mechanic',
+                             birthdate='8/9/1978')
 
 print(user_profile)
