@@ -1,4 +1,5 @@
-#  Inheritance
+# 9-9
+
 class Cars:
     """A simple attempt t respresent a car."""
 
@@ -54,6 +55,11 @@ class Battery():
         message = f"This car can go approximatley {range}"
         message += " miles in a full charge."
         print(message)
+    
+    def upgrade_battery(self):
+        """Upgrading the size of the default"""
+        if self.battery_size != 85:
+            self.battery_size = 85
 
 class ElectricCar(Cars):
     """Represent aspects of a car, sepecific to electric vechiles."""
@@ -69,4 +75,6 @@ class ElectricCar(Cars):
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 print(my_tesla.get_describtive_name())
 my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
 my_tesla.battery.get_range()

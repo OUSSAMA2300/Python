@@ -1,4 +1,5 @@
-#  Inheritance
+# Storing many classes in a single module and importing
+#  as much I want
 class Cars:
     """A simple attempt t respresent a car."""
 
@@ -66,7 +67,3 @@ class ElectricCar(Cars):
         """Electric cats don't have gas tanks."""
         print("This car doesn't need a gas tank!")
 
-my_tesla = ElectricCar('tesla', 'model s', 2016)
-print(my_tesla.get_describtive_name())
-my_tesla.battery.describe_battery()
-my_tesla.battery.get_range()
