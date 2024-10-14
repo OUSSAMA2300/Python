@@ -1,0 +1,5 @@
+In Python you can creat classes.
+In Python you can import modules.
+In Python you can various functions. 
+In Python you can creat lists.
+In Python you can creat a lot of applications.

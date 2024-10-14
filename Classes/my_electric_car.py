@@ -12,3 +12,8 @@ print(my_beetle.get_describtive_name())
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 print(my_tesla.get_describtive_name())
+
+
+# Importing an entire module 
+
+import car_classes

@@ -1,3 +1,4 @@
+# Importing a single calss
 from car_class import Cars
 
 my_new_car = Cars('bmw', 'X8', 2024)

@@ -1,3 +1,4 @@
+# 9-4
 class Restaurant():
     """A class describing the resturant"""
     def __init__(self, restaurant_name, cuisine_type):
