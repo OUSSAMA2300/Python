@@ -15,19 +15,11 @@ def run_game():
     # Make a ship
     ship = Ship(screen)
 
-    # Set a background color
-    bg_color = (230, 230, 230)
-
     # Start the main loop for the game
     while True:
 
-        gf.check_events()
-
-        # Redraw the screen during each pass through the loop
-        screen.fill(ai_settings.bg_color)
-        ship.blitme()
-
-        # Make the most recently drawn screen visible
-        pygame.display.flip()
+        gf.check_events(ship)       
+        ship.update()
+        gf.update_screen(ai_settings, screen, ship)
 
 run_game()
