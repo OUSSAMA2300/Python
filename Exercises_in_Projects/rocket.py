@@ -7,7 +7,8 @@ class Rocket():
         self.setting = setting
 
         self.org_image = pygame.image.load('images/MilitaryRocketWithFlames_0.png')
-        self.image = pygame.transform.scale(self.org_image, (200, 100))
+        self.rotated_image = pygame.transform.rotate(self.org_image, 90.0)
+        self.image = pygame.transform.scale(self.rotated_image, (100, 300))
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
