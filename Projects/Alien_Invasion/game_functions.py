@@ -37,7 +37,7 @@ def update_screen(ai_settings, screen, ship, bullets):
     screen.fill(ai_settings.bg_color)
     ship.blitme()
     # Redraw all bullets behind ship and aliens
-    for bullet in bullets.sprite():
+    for bullet in bullets.sprites():
         bullet.draw_bullet()
 
     # Make the most recently drawn screen visible
